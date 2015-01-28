@@ -26,7 +26,7 @@ public class Course {
 	}
 
 	public boolean drop(Student s) {
-		if (!roll.contains(s)) {
+		if (roll.contains(s)) {
 			roll.remove(s);
 			s.drop(this);
 			return true;
